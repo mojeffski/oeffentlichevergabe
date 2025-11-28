@@ -1,4 +1,4 @@
-# PuBlic Procurement Transparency
+# Public Procurement Transparency
 
 This project downloads and processes daily procurement notice exports from [öffentlichevergabe.de](https://oeffentlichevergabe.de).
 
