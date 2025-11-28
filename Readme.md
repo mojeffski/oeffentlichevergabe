@@ -1,4 +1,4 @@
-# Öffentliche Vergabe Scraper
+# PuBlic Procurement Transparency
 
 This project downloads and processes daily procurement notice exports from [öffentlichevergabe.de](https://oeffentlichevergabe.de).
 
@@ -6,7 +6,7 @@ It performs the following steps:
 1. 🗂️ Downloads a ZIP file containing multiple CSV files for a given `pubDay`.
 2. 📂 Unzips the archive and extracts the CSVs.
 3. 📊 Converts each CSV into a separate Excel sheet.
-4. 🔗 Merges all CSVs on the `noticeIdentifier` column into a combined sheet.
+4. Potential to do: 🔗 Merges all CSVs on the `noticeIdentifier` column into a combined sheet.
 
 ---
 
