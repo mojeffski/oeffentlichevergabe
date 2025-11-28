@@ -11,7 +11,7 @@ It performs the following steps:
 ---
 
 ## 📁 Project Structure
-.
+```
 ├── main.py                  # Main runner script
 ├── utils/
 │   ├── scraper.py           # Handles data download from API
@@ -21,7 +21,7 @@ It performs the following steps:
 ├── .gitignore
 ├── requirements.txt
 └── venv/                    # Virtual environment (excluded from git)
-
+```
 
 ---
 
