@@ -12,11 +12,15 @@ It performs the following steps:
 
 ## 📁 Project Structure
 ```
+├── analysis/
+    ├── test_analysis_scripts/ 
 ├── main.py                  # Main runner script
 ├── utils/
 │   ├── scraper.py           # Handles data download from API
 │   ├── processing.py        # Handles unzip, Excel conversion, and merging
 │   └── init.py
+    ├── analysis/
+       ├── risk_analysis.py 
 ├── data/                    # Stores ZIPs, extracted CSVs, and XLSX output
 ├── .gitignore
 ├── requirements.txt
@@ -36,10 +40,11 @@ It performs the following steps:
     ```bash
     pip install -r requirements.txt
     ```
-3. **Run script:**
+3. **Run script to obtain most recent dataset:**
 ```bash
     python3 -m main
 ```
+4. **Run 181225_test_script.ipynb to check out the test dataset:**
  
 ## Info;
 By default, the script runs for **yesterday’s date**.  
