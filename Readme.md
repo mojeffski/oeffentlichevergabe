@@ -29,6 +29,30 @@ It performs the following steps:
 
 ---
 
+## 🧭 Diagram + Data Flow
+```
+[main.py] 
+   |
+   v
+[utils/scraper.py] --(ZIP)--> data/notices_YYYY-MM-DD_csv.zip
+   |
+   v
+[utils/processing.py: unzip] --> data/unzipped/notices_YYYY-MM-DD/*.csv
+   |
+   v
+[utils/processing.py: csvs_to_xlsx] --> data/notices_YYYY-MM-DD.xlsx
+   |
+   v
+[cleanup] --> delete ZIP
+```
+1. Request daily export ZIP from oeffentlichevergabe.de for `pubDay`.
+2. Save ZIP to `data/`, then extract CSVs to `data/unzipped/`.
+3. Convert each CSV into a sheet in a single XLSX file.
+4. (Optional) Merge CSVs on `noticeIdentifier` into a combined sheet.
+5. Remove the original ZIP once processing is done.
+
+---
+
 ## 🚀 How to Run
 
 1. **Set up virtual environment (optional but recommended):**
